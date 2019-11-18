@@ -1,5 +1,5 @@
 const assert = require('assert');
-const checkSocialNetworkIntegrity = require('../../src/checkers/data-integrity-check')
+const checkSocialNetworkIntegrity = require('../../src/validators/data-integrity-check')
 const loadSocialNetworkFromFile = require('../../src/data/dataloader')
 const path = require('path')
 

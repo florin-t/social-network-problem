@@ -1,6 +1,6 @@
 const assert = require('assert');
 const { shortestChainOfFriends, calculateChainToOrigin } = require('../../src/algorithms/social-network')
-const checkSocialNetworkIntegrity = require('../../src/checkers/data-integrity-check')
+const checkSocialNetworkIntegrity = require('../../src/validators/data-integrity-check')
 const loadSocialNetworkFromFile = require('../../src/data/dataloader')
 const path = require('path')
 
