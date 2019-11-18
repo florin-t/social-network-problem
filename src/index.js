@@ -5,14 +5,13 @@ const path = require('path')
 const chalk = require('chalk')
 
 
-
 const filePath = path.join(__dirname, './social-network.json');
 const socialNetwork = loadSocialNetworkFromFile(filePath)
 const snIntegrity = checkSocialNetworkIntegrity(socialNetwork)
 console.log("Socian Network Integrity: " + snIntegrity)
 
 try {
-    console.log(socialNetworkAlgorithms.shortestChainOfFriends(socialNetwork, "u35", "u39"))
+    console.log(socialNetworkAlgorithms.shortestChainOfFriends(socialNetwork, "u11", "u35"))
 } catch (e) {
     console.log(chalk.red(e))
 }

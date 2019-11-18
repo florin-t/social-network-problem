@@ -1,4 +1,3 @@
-
 /**
  * Checks the integrity of the social network. 
  * Such as:

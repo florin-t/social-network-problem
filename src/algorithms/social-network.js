@@ -137,5 +137,6 @@ const shortestChainOfFriends = (socialNetwork, startPoint, endPoint) => {
 }
 
 module.exports = {
-    shortestChainOfFriends: shortestChainOfFriends
+    shortestChainOfFriends: shortestChainOfFriends,
+    calculateChainToOrigin: calculateChainToOrigin
 }
