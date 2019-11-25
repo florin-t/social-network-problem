@@ -1,7 +1,7 @@
 const loadSocialNetworkFromFile = require('./data/dataloader')
 const checkSocialNetworkIntegrity = require('./validators/data-integrity-check')
-const socialNetworkAlgorithms = require('./algorithms/social-network')
 const validateInput = require('./validators/input-validator')
+const shortestChainOneBfs = require('./algorithms/shortest-chain-one-bfs')
 const path = require('path')
 const chalk = require('chalk')
 const express = require('express')
@@ -31,7 +31,7 @@ app.get('/chain-of-users', (req, res) => {
         validateInput(socialNetwork, startUser)
         validateInput(socialNetwork, endUser)
         const chainOfUsers =
-            socialNetworkAlgorithms.shortestChainOfFriends(socialNetwork, startUser, endUser)
+            shortestChainOneBfs.shortestChainOfFriends(socialNetwork, startUser, endUser)
         res.status(200).send(chainOfUsers)
     } catch (e) {
         console.log(chalk.red(e))

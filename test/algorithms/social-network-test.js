@@ -1,5 +1,5 @@
 const assert = require('assert');
-const { shortestChainOfFriends, calculateChainToOrigin } = require('../../src/algorithms/social-network')
+const { shortestChainOfFriends } = require('../../src/algorithms/shortest-chain-one-bfs')
 const checkSocialNetworkIntegrity = require('../../src/validators/data-integrity-check')
 const loadSocialNetworkFromFile = require('../../src/data/dataloader')
 const path = require('path')
